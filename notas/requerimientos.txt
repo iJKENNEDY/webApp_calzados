@@ -1,0 +1,30 @@
+[]=== web-app tienda calzados ===[]
+|.................................|
+DESCRIPCION:::
+..............
+la tienda de calzados requiere un sistema informatico para
+registrar todo su mercaderia y asi llevar un orden en el area
+de ventas y almacen.
+=> se require ejemplos de boletas
+
+||--VENTAS::: 
+>Se emitira boletas de venta /facturas
+>se registraran datos basicos del cliente(nombre y apellidos,
+	sexo, email(para enviar la boleta)) [obligatorio/no obligatorio]
+>se calcularan valor de venta, igv, total
+>
+
+
+!!--PRODUCTO:::
+> caracteristicas (color, medida(talla), marca, 
+  tipoOcaciones[vestir, sport, casual],precio )
+
+
+_____________________
+==>FUNCIONALES:::::::
+>> 
+
+
+_____________________
+==>no-FUNCIONALES:::::::
+>> 
