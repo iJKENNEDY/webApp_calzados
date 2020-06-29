@@ -10,10 +10,16 @@
 		<div>
 
 			<form method="post" action="../controllers/tiendaController.php">
-				codigo :<input type="text" name="cod" /> nombre :<input type="text"
-					name="nom" /> marca :<input type="text" name="marc" /> talla:<input
-					type="text" name="tall" /> precio :<input type="text" name="pre" />
+				<table>
+					<tr>
+				<td>codigo: </td><input type="text" name="cod" />
+				<td> nombre</td><input type="text" name="nom" /> 
+				<td> marca </td><input type="text" name="marc" /> 
+				<td> talla</td><input type="text" name="tall" /> 
+				<td> precio</td><input type="text" name="pre" />
 				<input type="submit" name="btnRegistrar" value="Registrar tienda" />
+				</tr>
+				</table>
 			</form>
 		</div>
 	</div>
