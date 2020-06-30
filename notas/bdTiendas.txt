@@ -2,4 +2,5 @@
 >> tabla-USUARIOS
 -id | username | password | fecha 
 
->> tabla-
+>> tabla-registro:::
+codigo| nombre | marca | talla | color | precio | categoria(mujer-hombre)| fecha | cantidad

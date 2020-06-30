@@ -17,9 +17,9 @@ de ventas y almacen.
 
 !!--PRODUCTO:::
 > caracteristicas (color, medida(talla), marca, 
-  tipoOcaciones[vestir, sport, casual],precio )
+  tipoOcaciones[vestir, sport, casual],precio, genero)
 
-
+|idproducto|ca
 _____________________
 ==>FUNCIONALES:::::::
 >> 
