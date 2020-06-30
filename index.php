@@ -36,7 +36,7 @@
   <h5 class="my-0 mr-md-auto font-weight-normal">Calzados XYZ</h5>
   <nav class="my-2 my-md-0 mr-md-3">
     <a class="p-2 text-dark" href="index.php">Inicio</a>
-    <a class="p-2 text-dark" href="#">Blog</a>
+    <a class="p-2 text-dark" href="./views/frmInsertar.php">Insertar</a>
     <a class="p-2 text-dark" href="#">Contacto</a>
     <a class="p-2 text-dark" href="#">Precios</a>
   </nav>
