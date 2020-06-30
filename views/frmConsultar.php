@@ -1,7 +1,7 @@
 
 
 <?php
-/**
+
     include("../controllers/tiendaController.php");
     echo"<table width='840'>";
 echo"<tbody>";

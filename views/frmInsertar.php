@@ -13,15 +13,11 @@
 			<form method="post" action="../controllers/tiendaController.php">
 				<table class="bg-success">
 					<tr>
-<<<<<<< HEAD
-						<td colspan="2">Registro de calzados</td>
-=======
 						<td colspan="2"><h3>Registro de calzados</h3></td>
->>>>>>> se agrega mas campos en el formulario de registro
 					</tr>
 					
 				<tr><td>codigo: </td><td><input type="text" name="cod" /></td></tr>
-				<tr><td> nombre</td><td><input type="text" name="nom" /></td> </tr>
+				<tr><td> description</td><td><input type="text" name="nom" /></td> </tr>
 				<tr><td> marca </td><td><input type="text" name="marc" /></td> </tr>
 				<tr><td> talla</td><td><input type="text" name="tall" /></td> </tr>
 				<tr><td> color</td><td>
@@ -41,15 +37,6 @@
 				 </tr>
 				<tr><td> precio</td><td><input type="text" name="pre" /></td></tr>		
 				<tr>
-<<<<<<< HEAD
-					<td>
-						cantidad <input type="text" name="cantidad">
-					</td>
-				</tr>
-				<tr>
-					<td colspan="2">
-					<input type="submit" name="btnRegistrar" value="Registrar tienda" />
-=======
 					<td>cantidad</td>
 					<td> <input type="text" name="cantidad"></td>
 				</tr>
@@ -61,7 +48,6 @@
 						<center>
 					<input type="submit" name="btnRegistrar" value="Registrar" />
 					</center>
->>>>>>> se agrega mas campos en el formulario de registro
 					</td>
 				</tr>		
 				</table>
