@@ -4,3 +4,5 @@
 
 >> tabla-registro:::
 codigo| nombre | marca | talla | color | precio | categoria(mujer-hombre)| fecha | cantidad
+--.............
+registrocalzados` (`codigo`, `descripcion`, `marca`, `talla`, `color`, `categoria`, `precio`, `cantidad`, `imagen`)  

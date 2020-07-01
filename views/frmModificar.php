@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,20 +12,27 @@
      $idC=$_GET['idC'];
      $datos=consultartienda($idC);
      if($row=mysqli_fetch_array($datos)){
-      $id=$row['id'];
+      
       $cod=$row['codigo'];
-      $nom=$row['nombre'];
+      $nom=$row['descripcion'];
       $marc=$row['marca'];
       $tall=$row['talla'];
+      $color=$row['color'];
+      $categoria=$row['categoria'];
       $pre=$row['precio'];
+      $cantidad=$row['cantidad']; 
+
      }
      echo "<form method='post' action='../controllers/tiendaController.php'>";
-     echo "id : <input type='text' name='id' value='".$id."'/><br>";
-     echo "codigo :<input type='text' name='codigo' value='".$cod."'/><br>";
-     echo "nombre :<input type='text' name='nombre' value='".$nom."'/><br>";
+     
+     echo "codigo :<input type='text' name='codigo' value='".$cod."' /><br>";
+     echo "nombre :<input type='text' name='descripcion' value='".$nom."'/><br>";
      echo "marca :<input type='text' name='marca' value='".$marc."'/><br>";
      echo "talla:<input type='text' name='talla' value='".$tall."'/><br>";
+     echo "color:<input type='text' name='color' value='".$color."'/><br>";
+     echo "categoria:<input type='text' name='categoria' value='".$categoria."'/><br>";
      echo "precio:<input type='text' name='precio' value='".$pre."'/><br>";
+     echo "precio:<input type='text' name='cantidad' value='".$cantidad."'/><br>"; 
      echo "<input type='submit' name='btnActualizar' value='Actualizartienda'/>";
      echo "</form>";
  }
