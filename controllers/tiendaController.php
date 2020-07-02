@@ -16,7 +16,7 @@ header("Location: ../index.php");
     $m=modificar($cod,$nom,$marc,$tall,$color,$categoria,$pre,$cantidad);
     header("Location: ../index.php?m=$m");
  }else if(isset($_GET['id'])){//Eliminar
-      $id=$_GET['codigo'];
+      $id=$_GET['id'];
       $m=eliminartienda($id);
       header("Location: ../index.php?m=$m");
  }else if(isset($_POST['btnRegistrar'])){//Registrar

@@ -28,8 +28,8 @@ while ($row = mysqli_fetch_array($sql)) {
     echo "<td align 'center'>" . $row['categoria'] . "</td>";
     echo "<td align 'center'>" . $row['precio'] . "</td>";
     echo "<td align 'center'>" . $row['cantidad'] . "</td>";
-    echo '<td><a href="frmModificar.php?idC='.$row['codigo'].'"> Modificar</a></td>';
-    echo '<td><a href="../controllers/tiendaController.php?id='.$row['codigo'] . '"> Eliminar</a></td>';
+    //echo '<td><a href="frmModificar.php?idC='.$row['codigo'].'"> Modificar</a></td>';
+    //echo '<td><a href="../controllers/tiendaController.php?id='.$row['codigo'] . '"> Eliminar</a></td>';
     echo "</tr>";
 }
 echo "</tbody>";
