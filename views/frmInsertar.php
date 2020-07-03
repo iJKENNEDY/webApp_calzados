@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Dashboard</title>
+    <title>Nuevos Productos</title>
 
 	<link rel="stylesheet" type="text/css"	href="../resources/css/bootstrap.css">
 
@@ -43,10 +43,10 @@
         <a class="btn btn-outline-primary" href="">Login</a>
     </div>
 	<div class="container">
-		<div class="card-body">
+		<div class="">
 
-			<form method="post" action="../controllers/tiendaController.php">
-				<table class="bg-success">
+			<form class="form-row " method="post" action="../controllers/tiendaController.php">
+				<table class=" col-md-6 ">
 					<tr>
 						<td colspan="2"><h3>Registro de calzados</h3></td>
 					</tr>

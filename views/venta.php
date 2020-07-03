@@ -42,21 +42,20 @@
     </div>
     <div>
         <div>
-            <h4>Venta</h4>
-            <hr>
+            <h4>Venta</h4> 
         </div>
-       <div>
-            <table border="2">
-                <tr>
-                <tr>
+       <div class="container">
+            <table class="table" border="1">
+                
+                <tr class=""  style="width: 122">
                     <td>DNI/RUC</td>
                     <td colspan="3"><input type="text" name="dni" id=""></td>
                     <td rowspan="4">
-                        <fieldset>
-                            <legend style="text-align: center;">R.U.C. N°20344567932</legend>
-                            <table>
+                        <div class="card " style="width: 122">
+                            <label style="text-align: center;">R.U.C. N°20344567932</label>
+                            <table  style="text-align: center; width: 122;">
                                 <tr>
-                                    <th><h3>BOLETA DE VENTA</h3></th>
+                                    <th colspan="2"><h3 style="text-align: center">BOLETA DE VENTA</h3></th>
                                 </tr>
                                 <tr>
                                     <td>Serie</td>
@@ -68,7 +67,7 @@
                                 </tr>
                             </table>
 
-                        </fieldset>
+                        </div>
                         
                     </td>
                 </tr>
@@ -90,10 +89,8 @@
                     </td>
                     <td>Fecha</td><td><input type="date" name="fecha" id=""></td>
                 </tr>
-               
-                </tr>
-            </table>
-            <br>
+                
+            </table> 
 
             <table>
                 <tr>
@@ -118,7 +115,7 @@
 
                 </tr>
                 <tr>
-                    <td><button>agregar ventas</button></td>
+                    <td><input type="submit" value="agregar" name="btnAgregarCarrito"></td>
                 </tr>
             </table>
 
@@ -129,7 +126,7 @@
                 </tr>
                 <tr>
                     <?php 
-                        for ($i = 0; $i <8 ; $i++) {
+                        for ($i = 0; $i <3 ; $i++) {
                             echo "<tr>";
                             for ($j = 0; $j <7 ; $j++) {
                              $valor= $j* rand(1,50);
