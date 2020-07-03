@@ -37,7 +37,7 @@ function gettienda()
     return mysqli_query($cn, $sql);
 }
 
-function consultart($id)
+function consultarProducto($id)
 {
     global $cn;
     $sql = "SELECT * FROM  registrocalzados WHERE codigo='" . $id . "'";
@@ -48,8 +48,7 @@ function modificar($cod, $nom, $marc, $tall, $color, $categoria, $pre, $cantidad
 {
     global $cn;
     $sql = "UPDATE registrocalzados SET descripcion='" . $nom . "', marca='" . $marc . "',
-        talla='" . $tall . "',color='" . $color . "',
-        categoria='" . $categoria . "',precio='" . $pre . "',cantidad='" . $cantidad . "' 
+        talla='" . $tall . "',color='" . $color . "',categoria='" . $categoria . "',precio='" . $pre . "',cantidad='" . $cantidad . "' 
         WHERE codigo='" . $cod . "' ";
     if (mysqli_query($cn, $sql)) {
         return "Los datos fueron modificados de manera correcta";

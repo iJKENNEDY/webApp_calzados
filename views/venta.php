@@ -1,5 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
 
+    <link rel="stylesheet" type="text/css"  href="../resources/css/bootstrap.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
+    <style type="text/css">
+        .wrapper{
+            width: 777px;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+        .page-header h2{
+            margin-top: 0;
+        }
+        table tr td:last-child a{
+            margin-right: 15px;
+        }
+        .bg-qwerty{
+            background-color: Tomato;
+           
+        }
+    </style> 
+</head>
+<body>
 <div>
+    <div
+        class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm ">
+        <h5 class="my-0 mr-md-auto font-weight-normal">Calzados XYZ</h5>
+        <nav class="my-2 my-md-0 mr-md-3">
+            <a class="p-2 text-dark" href="../index.php">Inicio</a> <a
+                class="p-2 text-dark" href="frmInsertar.php">Insertar</a> 
+                <a class="p-2 text-dark" href="frmConsultar.php">Consultar</a> 
+                <a class="p-2 text-dark" href="venta.php">Boleta</a>
+        </nav>
+        <a class="btn btn-outline-primary" href="login.php">Login</a>
+    </div>
     <div>
         <div>
             <h4>Venta</h4>
@@ -125,9 +165,4 @@
     </div>
 </div>
 
-<?php
-
-
-
-
-?>
+</body>

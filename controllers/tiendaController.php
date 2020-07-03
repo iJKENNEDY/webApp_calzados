@@ -1,5 +1,4 @@
 <?php
-header("Location: ../index.php");
 // 
 
  include("../models/tiendaDAO.php");
@@ -14,11 +13,11 @@ header("Location: ../index.php");
     $cantidad = $_POST['cantidad'];
      
     $m=modificar($cod,$nom,$marc,$tall,$color,$categoria,$pre,$cantidad);
-    header("Location: ../index.php?m=$m");
+    header("Location: ../index.php?id=$m");
  }else if(isset($_GET['id'])){//Eliminar
       $id=$_GET['id'];
       $m=eliminartienda($id);
-      header("Location: ../index.php?m=$m");
+      header("Location: ../index.php?id=$m");
  }else if(isset($_POST['btnRegistrar'])){//Registrar
     $cod=$_POST['codigo'];
     $nom=$_POST['descripcion'];
@@ -30,10 +29,10 @@ header("Location: ../index.php");
     $cantidad = $_POST['cantidad'];
     
     $m=insertar($cod,$nom,$marc,$tall,$color,$categoria,$pre,$cantidad);
-    header("Location: ../index.php?m=$m");
+    header("Location: ../index.php");
  }
  function consultartienda($id){
-     return consultart($id);
+     return consultarProducto($id);
  }
  function listatienda(){
    return gettienda();
