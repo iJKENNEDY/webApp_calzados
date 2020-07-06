@@ -44,18 +44,18 @@
         <div>
             <h4>Venta</h4> 
         </div>
-       <div class="container">
-            <table class="table" border="1">
+       <div class="">
+            <table class="" border="1" style="background-color: yellow;">
                 
-                <tr class=""  style="width: 122">
+                <tr class=""  style="width: 92">
                     <td>DNI/RUC</td>
                     <td colspan="3"><input type="text" name="dni" id=""></td>
                     <td rowspan="4">
-                        <div class="card " style="width: 122">
+                        <div class="card " style="">
                             <label style="text-align: center;">R.U.C. N°20344567932</label>
-                            <table  style="text-align: center; width: 122;">
+                            <table  style="text-align: center; width: 90;">
                                 <tr>
-                                    <th colspan="2"><h3 style="text-align: center">BOLETA DE VENTA</h3></th>
+                                    <th colspan="2"><h5 style="text-align: center">BOLETA DE VENTA</h5></th>
                                 </tr>
                                 <tr>
                                     <td>Serie</td>
@@ -66,7 +66,10 @@
                                     <td><input type="text" name="numComprobante"></td>
                                 </tr>
                             </table>
-
+                            <div>
+                                <input type="submit" name="imprimir" value="Imprimir">
+                            </div>
+        
                         </div>
                         
                     </td>
