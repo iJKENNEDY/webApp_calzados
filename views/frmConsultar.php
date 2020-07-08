@@ -89,8 +89,8 @@
                                         echo "<td>" . $row['cantidad'] . "</td>";
                                         echo "<td >";
                                            
-                                            echo '<a href="frmModificar.php?idC='.$row['codigo'].'" title="Update Record" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil"></span></a>';
-                                            echo "<a href='../controllers/tiendaController.php?id=". $row['codigo'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span></a>";
+                                            echo '<a href="frmModificar.php?idC='.$row['codigo'].'" title="Update Record" data-toggle="tooltip"><span class="glyphicon glyphicon-pencil"></span>modificas</a>';
+                                            echo "<a href='../controllers/tiendaController.php?id=". $row['codigo'] ."' title='Delete Record' data-toggle='tooltip'><span class='glyphicon glyphicon-trash'></span>eliminar</a>";
                                         echo "</td>";
 
                                          
