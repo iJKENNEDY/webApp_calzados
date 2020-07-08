@@ -43,7 +43,7 @@
 				<a class="p-2 text-dark" href="views/frmConsultar.php">Consultar</a> 
 				<a class="p-2 text-dark" href="views/venta.php">Boleta</a>
 		</nav>
-		<a class="btn btn-outline-primary" href="">Login</a>
+		<a class="btn btn-outline-primary" href="views/login.php">Login</a>
 	</div>
  <?php 
  if(isset($_GET['m'])){

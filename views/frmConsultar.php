@@ -57,6 +57,7 @@
                     <?php
                     // Include config file
                     include '../models/conexion.php';
+                    global $cn;
                     // Attempt select query execution
                     $sql = "SELECT * FROM registrocalzados";
                     if($result = mysqli_query($cn, $sql)){

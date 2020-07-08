@@ -40,14 +40,14 @@
         </nav>
         <a class="btn btn-outline-primary" href="login.php">Login</a>
     </div>
-    <div>
+    <div class="container">
         <div>
             <h4>Venta</h4> 
         </div>
-       <div class="">
-            <table class="" border="1" style="background-color: yellow;">
+       <div class="stable-responsive-sm">
+            <table class="table table-sm  table-borderless" border="" style="background-color: yellow;">
                 
-                <tr class=""  style="width: 92">
+                <tr class=""  style="">
                     <td>DNI/RUC</td>
                     <td colspan="3"><input type="text" name="dni" id=""></td>
                     <td rowspan="4">
@@ -66,21 +66,18 @@
                                     <td><input type="text" name="numComprobante"></td>
                                 </tr>
                             </table>
-                            <div>
-                                <input type="submit" name="imprimir" value="Imprimir">
-                            </div>
-        
+                            
                         </div>
                         
                     </td>
                 </tr>
                 <tr>
                     <td >Cliente</td>
-                    <td colspan="3" ><input type="text" name="cliente" id="" style="width: 100%;"></td>
+                    <td colspan="3" ><input type="text" name="cliente" id="" style=""></td>
                 </tr>
                 <tr>
                     <td >Direccion</td>
-                    <td colspan="3"><input style="width: 100%;" type="text" name="direccion" id=""></td>
+                    <td colspan="3"><input style="" type="text" name="direccion" id=""></td>
                     <br>
                 </tr>
                 <tr>
@@ -95,7 +92,7 @@
                 
             </table> 
 
-            <table>
+            <table class="table table-sm  table-borderless">
                 <tr>
                     <td>
                         <label for="categoria">Categoria</label>
@@ -117,12 +114,10 @@
                     <td>cantidad <input type="text" name="cantidad"></td>
 
                 </tr>
-                <tr>
-                    <td><input type="submit" value="agregar" name="btnAgregarCarrito"></td>
-                </tr>
+                
             </table>
 
-            <table style="width: 70%;" border="1">
+            <table class="table table-sm " style="width: 70%;" border="1">
                 <tr>
                     <th>item</th><th>descripcion</th><th>P.Venta</th><th>Cantidad</th>
                     <th>I.G.V.</th><th>Importe</th><th>opciones</th>
@@ -141,7 +136,7 @@
                      ?>
                 </tr>
             </table>
-            <table border="1" style="width: 70%;">
+            <table border="1" style="width: 0%;">
                 <tr>
                     <th>SUB-TOTAL</th>
                     <th>I.G.V.</th>
@@ -153,15 +148,14 @@
                     <td><label>gsrrsgrsgr</label></td>
                 </tr>
 
-                <tr>
-                    <td colspan="3">
-                        <input type="submit" name="btnGenerarVenta" value="generar venta">
-                        <input type="submit" name="btnCancelar" value="cancelar">
-                    </td>
-                </tr>
+                
             </table>
             
        </div>
+    </div>
+
+    <div style="height: 90">
+        
     </div>
 </div>
 
