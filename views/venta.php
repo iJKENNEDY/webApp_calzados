@@ -93,6 +93,13 @@
                         <input type="date" name="fecha" disabled>
                     </td>
                 </tr>
+                <tr>
+                    <td>Tipo de Pago</td>
+                    <td>
+                        <input class="input-sm" type="text" name="tipopago" >
+                    </td>
+
+                </tr>
             </table>
 
         </div>
@@ -107,11 +114,13 @@
                             <th>categoria</th>
                             <th>producto</th>
                             <th>cantidad</th>
+
                         </tr>
                         <tr>
                             <td><input class="input-sm" type="text" name="categoria" ></td>
                             <td><input class="input-sm" type="text" name="producto" ></td>
                             <td><input class="input-sm" type="text" name="cantidad" ></td>
+                            
                         </tr>
                     </table>
                 </fieldset>
@@ -165,6 +174,10 @@
         <div class="col-md-1 bg-danger center">
              <div class="btn">
                  <button type="submit" class="btn-sm btn-block btn-outline-primary bg-primary">Agregar</button>
+             </div>
+             <br>
+             <div class="btn">
+                 <button type="submit" class="btn-sm btn-block btn-outline-primary bg-primary">generar venta</button>
              </div>
              <br>
              <div class="btn">
