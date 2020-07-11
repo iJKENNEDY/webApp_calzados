@@ -3,25 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
-
+    
     <link rel="stylesheet" type="text/css"  href="resources/css/bootstrap.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.js"></script>
 
     <style type="text/css">
-        .wrapper{
-            width: 777px;
-            margin: 0 auto;
-            font-size: 14px;
-        }
-        .page-header h2{
-            margin-top: 0;
-        }
-        table tr td:last-child a{
-            margin-right: 15px;
-        }
+        
         .bg-qwerty{
             background-color: Tomato;
            
@@ -45,15 +34,7 @@
 		</nav>
 		<a class="btn btn-outline-primary" href="views/login.php">Login</a>
 	</div>
- <?php 
- if(isset($_GET['m'])){
-	$m=$_GET['m'];
-	echo '<script language="javascript"> alert("'.$m.'");</script>';
-    }
-echo '<a href="./views/frmInsertar.php">Registrar producto</a><br>';
-echo '<a href="./views/frmConsultar.php">Lista de productos</a><br>';
-
-?>
+ 
 
     </div>
 	</div>

@@ -40,122 +40,141 @@
         </nav>
         <a class="btn btn-outline-primary" href="login.php">Login</a>
     </div>
-    <div class="container">
-        <div>
-            <h4>Venta</h4> 
+
+    <div class="container-xl">
+        <h2>-----VENTA------</h2>
+
+        <div class="col-md-5 card  p-0 m-0" >
+            <div class="card-header bg-info ">
+                <h4 class="my-0 font-weight-normal">boleta</h4>
+            </div>    
+            <table class="table">
+                <tr class="">
+                    <td><b>serie</b></td>
+                    <td><b>Nro boleta</b></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="serie" disabled>
+                    </td>
+                    <td style="width: 50%;">
+                        <input type="text" name="nroBoleta" disabled>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dni">dni/ruc</label>
+                    </td>
+                    <td style="width: 50%;">
+                        <input type="text" name="dni">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="cliente">cliente</label>
+                    </td>
+                    <td style="width: 50%;">
+                        <input type="text" name="cliente">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="direccion">direccion</label>
+                    </td>
+                    <td style="width: 50%;">
+                        <input type="txt" name="direccion">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="fecha">fecha</label>
+                    </td>
+                    <td style="width: 50%;">
+                        <input type="date" name="fecha" disabled>
+                    </td>
+                </tr>
+            </table>
+
         </div>
-       <div class="stable-responsive-sm">
-            <table class="table table-sm  table-borderless" border="" style="background-color: yellow;">
+
+        <div class="col-md-6 card" >
+            <div >
+                <div class="table-sm bg-success">
+                <fieldset>
+                    <legend>Producto_venta</legend>
+                    <table>
+                        <tr>
+                            <th>categoria</th>
+                            <th>producto</th>
+                            <th>cantidad</th>
+                        </tr>
+                        <tr>
+                            <td><input class="input-sm" type="text" name="categoria" ></td>
+                            <td><input class="input-sm" type="text" name="producto" ></td>
+                            <td><input class="input-sm" type="text" name="cantidad" ></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br><br>
+                </div>
+
+            <table class="table" border="1">
+                <tr>
+                    <th>Nro</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>accion</th>
+                </tr>
+                <?php for ($i = 0; $i < 3; $i++) { ?>
+                <tr>
+                    
+                    <td>1</td>
+                    <td>botines marron</td>
+                    <td>324.33</td>
+                    <td>2</td>
+                    <td>639</td>
+                    <td><a href="#">x</a></td>
                 
-                <tr class=""  style="">
-                    <td>DNI/RUC</td>
-                    <td colspan="3"><input type="text" name="dni" id=""></td>
-                    <td rowspan="4">
-                        <div class="card " style="">
-                            <label style="text-align: center;">R.U.C. N°20344567932</label>
-                            <table  style="text-align: center; width: 90;">
-                                <tr>
-                                    <th colspan="2"><h5 style="text-align: center">BOLETA DE VENTA</h5></th>
-                                </tr>
-                                <tr>
-                                    <td>Serie</td>
-                                    <td>N° Comprobante</td>
-                                </tr>
-                                <tr>
-                                    <td><input type="text" name="serie"></td>
-                                    <td><input type="text" name="numComprobante"></td>
-                                </tr>
-                            </table>
-                            
-                        </div>
-                        
-                    </td>
                 </tr>
+                <?php } ?>
                 <tr>
-                    <td >Cliente</td>
-                    <td colspan="3" ><input type="text" name="cliente" id="" style=""></td>
-                </tr>
-                <tr>
-                    <td >Direccion</td>
-                    <td colspan="3"><input style="" type="text" name="direccion" id=""></td>
-                    <br>
-                </tr>
-                <tr>
-                    <td>Tipo Persona</td><td>
-                        <select name="tipoPersona" id="">
-                            <option value="natural">Natural</option>
-                            <option value="juridica">Juridica</option>
-                        </select>
-                    </td>
-                    <td>Fecha</td><td><input type="date" name="fecha" id=""></td>
-                </tr>
-                
-            </table> 
+                  
+            </table>    
+            <div>
+                <fieldset>
+                    <legend>precio venta</legend>
+                    <table>
+                        <tr>
+                            <th>subtotal</th>
+                            <th>igv</th>
+                            <th>total_pagar</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="subtotal" disabled></td>
+                            <td><input type="text" name="igv" disabled></td>
+                            <td><input type="text" name="totalpagar" disabled></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+            </div>
+        </div>
 
-            <table class="table table-sm  table-borderless">
-                <tr>
-                    <td>
-                        <label for="categoria">Categoria</label>
-                            <select name="categoria">
-                                <option value="zapatos">zapatos</option>
-                                <option value="zapatillas">zapatillas</option>
-                                <option value="sandalias">sandalias</option>
-                            </select>
-                    </td>
-                    <td>
-                        producto <input type="text" name="producto">
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        precio Compra s/. <input type="text" name="pcompra">
-                    </td>
-                    <td>stock <input type="text" name="stock"></td>
-                    <td>cantidad <input type="text" name="cantidad"></td>
-
-                </tr>
-                
-            </table>
-
-            <table class="table table-sm " style="width: 70%;" border="1">
-                <tr>
-                    <th>item</th><th>descripcion</th><th>P.Venta</th><th>Cantidad</th>
-                    <th>I.G.V.</th><th>Importe</th><th>opciones</th>
-                </tr>
-                <tr>
-                    <?php 
-                        for ($i = 0; $i <3 ; $i++) {
-                            echo "<tr>";
-                            for ($j = 0; $j <7 ; $j++) {
-                             $valor= $j* rand(1,50);
-                               echo "<td>$valor</td>"; 
-                            }
-                            echo "</tr>";
-                            
-                        }
-                     ?>
-                </tr>
-            </table>
-            <table border="1" style="width: 0%;">
-                <tr>
-                    <th>SUB-TOTAL</th>
-                    <th>I.G.V.</th>
-                    <th>TOTAL</th>
-                </tr>
-                <tr>
-                    <td><label>gsfgsdfg sgdfsg gsdfgsdf</label></td>
-                    <td><label>gggggggggggrrrrrrrrrr</label></td>
-                    <td><label>gsrrsgrsgr</label></td>
-                </tr>
-
-                
-            </table>
-            
-       </div>
-    </div>
-
-    <div style="height: 90">
-        
+        <div class="col-md-1 bg-danger center">
+             <div class="btn">
+                 <button type="submit" class="btn-sm btn-block btn-outline-primary bg-primary">Agregar</button>
+             </div>
+             <br>
+             <div class="btn">
+                 <button type="submit" class="btn-sm btn-block btn-outline-primary bg-primary">cancelar</button>
+             </div>
+             <br>
+             <div class="btn">
+                 <button type="submit" class="btn-sm btn-block btn-outline-primary bg-primary">imprimir</button>
+             </div>
+        </div>
     </div>
 </div>
 
