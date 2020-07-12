@@ -43,6 +43,8 @@
 
     <div class="container-xl">
         <h2>-----VENTA------</h2>
+        
+        <form action="venta.php" method="post">
 
         <div class="col-md-5 card  p-0 m-0" >
             <div class="card-header bg-info ">
@@ -90,7 +92,7 @@
                         <label for="fecha">fecha</label>
                     </td>
                     <td style="width: 50%;">
-                        <input type="date" name="fecha" disabled>
+                        <input type="date" name="fecha" >
                     </td>
                 </tr>
                 <tr>
@@ -117,9 +119,9 @@
 
                         </tr>
                         <tr>
-                            <td><input class="input-sm" type="text" name="categoria" ></td>
                             <td><input class="input-sm" type="text" name="producto" ></td>
-                            <td><input class="input-sm" type="text" name="cantidad" ></td>
+                            <td><input class="input-sm" type="number" name="precio" ></td>
+                            <td><input class="input-sm" type="number" name="cantidad" ></td>
                             
                         </tr>
                     </table>
@@ -177,7 +179,7 @@
              </div>
              <br>
              <div class="btn">
-                 <button type="submit" class="btn-sm btn-block btn-outline-primary bg-primary">generar venta</button>
+                 <button type="submit" name="btnGenerarVenta" class="btn-sm btn-block btn-outline-primary bg-primary">generar venta</button>
              </div>
              <br>
              <div class="btn">
@@ -185,10 +187,99 @@
              </div>
              <br>
              <div class="btn">
-                 <button type="submit" class="btn-sm btn-block btn-outline-primary bg-primary">imprimir</button>
+                 <button type="submit" name="btnimprimir" class="btn-sm btn-block btn-outline-primary bg-primary">imprimir</button>
              </div>
         </div>
+        </form>
     </div>
 </div>
 
 </body>
+
+<?php 
+    
+    require "../models/conexion.php";
+
+    if (isset($_POST['btnGenerarVenta'])) {
+        global $cn;
+
+        $dni = $_POST['dni'];
+        $cliente = $_POST['cliente'];
+        $direccion = $_POST['direccion'];
+        $fecha = $_POST['fecha'];
+        $pago = $_POST['tipopago'];
+
+        $producto =$_POST['producto'];
+        $precio = $_POST['precio'];
+        $cantidad = $_POST['cantidad'];
+
+        $sql = "INSERT INTO boleta
+         VALUES (NULL,'" . $dni . "','" . $cliente . "','" . $direccion . "','" . $fecha . "',
+                '" . $pago . "','" . $producto . "','" . $precio . "','" . $cantidad . "')";
+    if (mysqli_query($cn, $sql)) {
+        
+        return "<script type='text/javascript'>alert('se agrego correctamente');</script>";
+        } else {
+        return "ERROR, los datos no registraron???";
+     }
+    }
+
+
+ ?> 
+
+<?php if (isset($_POST['btnimprimir'])) {
+    
+}
+
+ $sql = "SELECT * FROM boleta";
+                    if($result = mysqli_query($cn, $sql)){
+                        if(mysqli_num_rows($result) > 0){
+                            echo "<table class='bg-qwerty table table-bordered table-striped' border=1>";
+                                echo "<thead>";
+                                    echo "<tr>";
+                                        echo "<th>#</th>";
+                                        echo "<th width='155'>Descripcion</th>";
+                                        echo "<th width='155'>marca</th>";
+                                        echo "<th width='155'>talla</th>";
+                                        echo "<th width='155'>color</th>";
+                                        echo "<th width='155'>categoria</th>";
+                                        echo "<th width='155'>precio</th>";
+                                        echo "<th width='155'>cantidad</th>";
+                                        echo "<th width='380'>asdas</th>";
+                                        echo "<th width='380'>Action</th>";
+                                    echo "</tr>";
+                                echo "</thead>";
+                                echo "<tbody>";
+                                while($row = mysqli_fetch_array($result)){
+                                    echo "<tr>";
+                                        echo "<td>" . $row['id'] . "</td>";
+                                        echo "<td>" . $row['dni'] . "</td>";
+                                        echo "<td>" . $row['cliente'] . "</td>";
+                                        echo "<td>" . $row['direccion'] . "</td>";
+                                        echo "<td>" . $row['fecha'] . "</td>";
+                                        echo "<td>" . $row['tipopago'] . "</td>";
+                                        echo "<td>" . $row['producto'] . "</td>";
+                                        echo "<td>" . $row['precio'] . "</td>";
+                                        echo "<td>" . $row['cantidad'] . "</td>";
+                                        echo "<td >";
+                                           
+                                            
+                                        echo "</td>";
+
+                                         
+
+                                    echo "</tr>";
+                                }
+                                echo "</tbody>";                            
+                            echo "</table>";
+                            // Free result set
+                            mysqli_free_result($result);
+                        } else{
+                            echo "<p class='lead'><em>No records were found.</em></p>";
+                        }
+                    } else{
+                        echo "ERROR: Could not able to execute $sql. " . mysqli_error($cn);
+                    }
+
+ ?>
+     
